@@ -1,9 +1,11 @@
+#!/bin/bash
+set -e
 
 AGENT_VERSION=2.202.1
 CHROME_DRIVER_VERSION=101.0.4951.41
 
-# Install agant
-mkdir ~/myagent
+# Install agent
+mkdir -p ~/myagent
 wget -P ~/myagent https://vstsagentpackage.azureedge.net/agent/${AGENT_VERSION}/vsts-agent-linux-x64-${AGENT_VERSION}.tar.gz
 tar zxvf ~/myagent/vsts-agent-linux-x64-${AGENT_VERSION}.tar.gz --directory ~/myagent
 
